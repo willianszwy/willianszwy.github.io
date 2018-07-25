@@ -1,0 +1,43 @@
+# Site settings
+title: Willians Oliveira
+description: 'Full Stack Developer | Functional programming | Mountaineering'
+url: 'http://willians.me'
+baseurl: ''
+google_analytics: 'UA-122817301-1'
+disqus_shortname: 'willians-me'
+
+author:
+  name: 'Willians Oliveira'
+  email: willianszwy@gmail.com
+  twitter_username: willianszwy
+  # facebook_username: willianszwy
+  github_username:  willianszwy
+  linkedin_username:  willianszwy
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
